@@ -17,11 +17,28 @@
             <p>Slet filer, der er dubletter eller ikke i brug, og arkiver de vigtige filer. Se vejledningen om, hvordan du rydder op på din computer og din harddisk.</p>
         </div>
     </div>
+</div>
 
+
+<!-- Desktop format -->
+<div class="background-forsiden-container-pad2">
+    <div class="fpormat-container2">
+        <div class="fpormat-content2">
+            <div class="f-pormat-om-div-ind2">
+                <h1>Ryd op på din computers harddisk</h1><br>
+                <p>Slet filer, der er dubletter eller ikke i brug, og arkiver de vigtige filer. Se vejledningen om, hvordan du rydder op på din computer og din harddisk</p>
+            </div>
+            <h1>Indsæt img src="" </h1>
+        </div>
+    </div>
 </div>
 
 
 <style>
+
+    .background-forsiden-container-pad2{
+        display: none;
+    }
 
     .container-background-color{
         background-color: #124E29;
@@ -50,5 +67,64 @@
         font-size: 20px;
         padding-bottom: 50px;
         color: white;
+    }
+
+    
+
+    @media screen and (min-width: 1512px){
+        .background-forsiden-container-pad2{
+        display: block;
+    }
+    .container-background-color{
+        display: none;
+    }
+
+    .fpormat-content2{
+        display: flex;
+        justify-content: center;
+        padding: 40px 70px 0px 70px;
+        margin-left: 50px;
+        padding-bottom: 0px;
+    }
+
+    .fpormat-content2 img{
+        max-width: 100%;
+        max-height: 350px;
+        padding-top: 80px;
+    }
+
+    .f-pormat-om-div-ind2{
+        color: black;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+       
+    }
+
+    .background-forsiden-container-pad2{
+        background-color: #124E29;
+        
+    }
+
+    .fpormat-content2 h1{
+        color: white;
+        font-family: "Lato", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 27px;
+    }
+
+    .fpormat-content2 p{
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        width: 250px;
+    
+    }
+        
     }
 </style>

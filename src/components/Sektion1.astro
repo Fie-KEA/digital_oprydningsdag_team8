@@ -3,36 +3,58 @@ import { Image } from 'astro:assets';
 import sek1bil from "../assets/images/sek1-bil.png"
 ---
 
-<!-- Link til Roboto font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<!-- Link til Roboto font -->
 
-<div class="container-background-color">
+<div class="mobil-indhold">
+    <div class="container-background-color">
 
-    <div class="c-mob">
-        <div class="d-mob">
-            <h1>indsæt billede</h1>
+        <div class="c-mob">
+            <div class="d-mob">
+                <h1>indsæt billede</h1>
+            </div>
         </div>
-    </div>
-    
-    <div class="c-mob2">
-        <div class="d-mob2">
-            <h1>Slet apps der ikke bliver brugt</h1>
+        
+        <div class="c-mob2">
+            <div class="d-mob2">
+                <h1>Slet apps der ikke bliver brugt</h1>
+            </div>
         </div>
-    </div>
-    
-    <div class="c-mob2-p">
-        <div class="d-mob2-p">
-            <p>Slet alle de unødvendige billeder og glemte, gamle apps og spil. De bruger energi, selv når de ikke er i brug, og kan forbruge hundredvis af megabytes ved månedlige opdateringer.</p>
+        
+        <div class="c-mob2-p">
+            <div class="d-mob2-p">
+                <p>Slet alle de unødvendige billeder og glemte, gamle apps og spil. De bruger energi, selv når de ikke er i brug, og kan forbruge hundredvis af megabytes ved månedlige opdateringer.</p>
+            </div>
         </div>
     </div>
 
 </div>
 
 
+
+<div class="desktop-indhold">
+    <div class="fpormat-container">
+        <div class="fpormat-content">
+            <h1>Indsæt img src="" </h1>
+    
+            <div class="fpormat-ind">
+                <h1>Slet apps der ikke bliver brugt</h1><br>
+                <p>Slet alle de unødvendige billeder og glemte, gamle apps og spil. De bruger energi, selv når de ikke er i brug, og kan forbruge hundredvis af megabytes ved månedlige opdateringer.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
 <style>
+
+    .mobil-indhold{
+        display: block;
+    }
+
+    .desktop-indhold{
+        display: none;
+    }
 
     .container-background-color{
         background-color: #FFFDF5;
@@ -60,6 +82,45 @@ import sek1bil from "../assets/images/sek1-bil.png"
         font-weight: 300;
         font-size: 20px;
         padding-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1512px){
+
+        .mobil-indhold{
+        display: none;
+    }
+
+    .desktop-indhold{
+        display: block;
+    }
+        
+    .fpormat-content{
+        display: flex;
+        justify-content: center;
+        padding: 70px;
+        width: 800px;
+        background-color: #FFFDF5;;
+    }
+
+    .fpormat-content img{
+        max-width: 100%;
+        max-height: 350px;
+    }
+
+    .fpormat-ind{
+
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .fpormat-content h1{
+        font-family: "Lato", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 27px;
+    }
     }
 </style>
 
