@@ -1,3 +1,28 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 ---
+
+<MainLayout>
+  <div class="bg-cover bg-center w-full h-full bg-green-900">
+    <section
+      class="flex justify-center flex-col lg:flex-row py-20 px-24 lg:px-35 lg:py-20 gap-32"
+    >
+      <div>
+        <div class="animate__animated animate__fadeInLeft">
+          <h1 class="text-4xl text-white mb-12">Digital Oprydningsdag</h1>
+          <h2 class="text-white">
+            En dag hvor vi samles og rydder op i vores digitale affald!
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <div class="flex justify-center align-center">
+      <img
+        class="w-60 lg:w-96 animate-pulse"
+        src="public/verden_illustration.svg"
+        alt="Oppefra"
+      />
+    </div>
+  </div>
+</MainLayout>
