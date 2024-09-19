@@ -9,32 +9,35 @@ import sek3bil from "../assets/images/sek3bil.png"
 <div class="mobil-indhold">
     <div class="container-background-color">
 
-        <div class="c-mob">
-            <div class="d-mob">
-                <img src={sek3bil.src} alt="iPhone-sektion1">
+        <div class="flex-center">
+            <div class="flex-center pt-12">
+                <img src={sek3bil.src} alt="iPhone-sektion1" class="d-mob-klasse">
             </div>
         </div>
+
+      
+
         
-        <div class="c-mob2">
+        <div class="flex-center">
             <div class="d-mob2">
-                <h1>Ryd op i din mailboks</h1>
+                <h1 class="tredjesektion-h1">Ryd op i din mailboks</h1>
             </div>
         </div>
+
         
-        <div class="c-mob2-p">
+        <div class="flex-center">
             <div class="d-mob2-p">
-                <p>Filtrer e-mails efter de ældste og arkiver dem. Afmeld nyhedsbreve, du ikke læser.</p>
+                <p class="tredje-sektion-p-tekst">Filtrer e-mails efter de ældste og arkiver dem. Afmeld nyhedsbreve, du ikke læser.</p>
             </div>
         </div>
     </div>
-
 </div>
 
 
 <!-- Desktop format -->
 <!-- Desktop format -->
 
-    <div class="fpormat-container">
+    <div class="desktop-indhold">
         <div class="fpormat-content">
             <img src={sek3bil.src} alt="iPhone-sektion1">
             <div class="fpormat-ind">
@@ -50,17 +53,7 @@ import sek3bil from "../assets/images/sek3bil.png"
 
 <style>
 
-    .d-mob{
-        display: flex;
-        justify-content: center;
-        padding-top: 50px;
-    }
 
-    .d-mob img{
-        max-width: 100%;
-        max-height: 300px;
-        padding-bottom: 20px;
-    }
 
     .mobil-indhold{
         display: block;
@@ -74,33 +67,13 @@ import sek3bil from "../assets/images/sek3bil.png"
         background-color: #FFFDF5;
     }
 
-    .c-mob2{
-        display: flex;
-        justify-content: center;
-    }
-    .d-mob2 h1{
-        font-size: 30px;
-        width: 300px;
-        font-weight: 600;
-        color: #397933;
-    }
 
     /* Brødtekst til sektion 1 */
-    .c-mob2-p{
-        display: flex;
-        justify-content: center;
-    
-    }
-    .d-mob2-p p{
-        width: 300px;
-        font-weight: 300;
-        font-size: 20px;
-        padding-bottom: 50px;
-    }
+
 
     @media screen and (min-width: 1512px){
 
-        .mobil-indhold{
+    .mobil-indhold{
         display: none;
     }
 

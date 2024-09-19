@@ -10,27 +10,25 @@ import sek1bil from "../assets/images/sek1bil.png"
     <div class="container-background-color">
 
         <div class="c-mob">
-            <div class="d-mob">
-                <img src={sek1bil.src} alt="iPhone-sektion1">
+            <div class="flex justify-center ">
+                <img src={sek1bil.src} alt="iPhone-sektion1" class="max-w-full max-h-80">
             </div>
         </div>
 
         
-        <div class="c-mob2">
-            <div class="d-mob2">
-                <h1>Slet apps der ikke bliver brugt</h1>
+        <div class="flex justify-center">
+            <div class="flex justify-center">
+                <h1 class="text-3xl w-80 font-semibold minegenfarve" >Slet apps der ikke bliver brugt</h1> 
             </div>
         </div>
         
-        <div class="c-mob2-p">
+        <div class="flex justify-center">
             <div class="d-mob2-p">
-                <p>Slet alle de unødvendige billeder og glemte, gamle apps og spil. De bruger energi, selv når de ikke er i brug, og kan forbruge hundredvis af megabytes ved månedlige opdateringer.</p>
+                <p class="w-80 font-light text-xl pb-12" >Slet alle de unødvendige billeder og glemte, gamle apps og spil. De bruger energi, selv når de ikke er i brug, og kan forbruge hundredvis af megabytes ved månedlige opdateringer.</p>
             </div>
         </div>
     </div>
-
 </div>
-
 
 
 <!-- Desktop format -->
@@ -40,7 +38,7 @@ import sek1bil from "../assets/images/sek1bil.png"
         <div class="fpormat-content">
             <img src={sek1bil.src} alt="A bird sitting on a nest of eggs.">
     
-            <div class="fpormat-ind">
+            <div class="pl-12 flex flex-col">
                 <h1>Slet apps der ikke bliver brugt</h1><br>
                 <p>Slet alle de unødvendige billeder og glemte, gamle apps og spil. De bruger energi, selv når de ikke er i brug, og kan forbruge hundredvis af megabytes ved månedlige opdateringer.</p>
             </div>
@@ -52,14 +50,7 @@ import sek1bil from "../assets/images/sek1bil.png"
 
 
 <style>
-    .d-mob{
-        display: flex;
-        justify-content: center;
-    }
-    .d-mob img{
-        max-width: 100%;
-        max-height: 300px;
-    }
+
 
     .mobil-indhold{
         display: block;
@@ -74,29 +65,6 @@ import sek1bil from "../assets/images/sek1bil.png"
         width: 100%;
     }
 
-    .c-mob2{
-        display: flex;
-        justify-content: center;
-    }
-    .d-mob2 h1{
-        font-size: 30px;
-        width: 300px;
-        font-weight: 600;
-        color: #397933;
-    }
-
-    /* Brødtekst til sektion 1 */
-    .c-mob2-p{
-        display: flex;
-        justify-content: center;
-    
-    }
-    .d-mob2-p p{
-        width: 300px;
-        font-weight: 300;
-        font-size: 20px;
-        padding-bottom: 50px;
-    }
 
     @media screen and (min-width: 1512px){
 
@@ -123,13 +91,7 @@ import sek1bil from "../assets/images/sek1bil.png"
         max-height: 350px;
     }
 
-    .fpormat-ind{
 
-        padding-left: 50px;
-        display: flex;
-        flex-direction: column;
-       
-    }
 
     .fpormat-content h1{
         font-family: "Lato", sans-serif;
