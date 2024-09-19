@@ -1,8 +1,16 @@
+---
+import { Image } from 'astro:assets';
+import sek2bil from "../assets/images/sek2bil.png"
+---
+
+
+<!-- Mobil format -->
+<!-- Mobil format -->
 <div class="container-background-color">
 
     <div class="c-mob">
         <div class="d-mob">
-            <h2>indsæt billede2</h2>
+            <img src={sek2bil.src} alt="iPhone-sektion1">
         </div>
     </div>
     
@@ -21,6 +29,7 @@
 
 
 <!-- Desktop format -->
+<!-- Desktop format -->
 <div class="background-forsiden-container-pad2">
     <div class="fpormat-container2">
         <div class="fpormat-content2">
@@ -28,13 +37,25 @@
                 <h1>Ryd op på din computers harddisk</h1><br>
                 <p>Slet filer, der er dubletter eller ikke i brug, og arkiver de vigtige filer. Se vejledningen om, hvordan du rydder op på din computer og din harddisk</p>
             </div>
-            <h1>Indsæt img src="" </h1>
+            <img src={sek2bil.src} alt="iPhone-sektion1">
         </div>
     </div>
 </div>
 
 
 <style>
+
+    .d-mob{
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .d-mob img{
+        max-width: 100%;
+        max-height: 180px;
+        padding-bottom: 20px;
+    }
 
     .background-forsiden-container-pad2{
         display: none;

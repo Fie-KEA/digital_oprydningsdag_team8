@@ -1,10 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import sek4bil from "../assets/images/sek4bil.png"
+---
+
+
+<!-- Mobil format -->
+<!-- Mobil format -->
 <div class="container-background-color">
 
     <div class="c-mob">
         <div class="d-mob">
-            <h2>indsæt billede2</h2>
+            <img src={sek4bil.src} alt="iPhone-sektion1">
         </div>
     </div>
+
+
     
     <div class="c-mob2">
         <div class="d-mob2">
@@ -21,6 +31,7 @@
 
 
 <!-- Desktop format -->
+<!-- Desktop format -->
 <div class="background-forsiden-container-pad2">
     <div class="fpormat-container2">
         <div class="fpormat-content2">
@@ -28,7 +39,7 @@
                 <h1>Ændringer i dine internet vaner</h1><br>
                 <p>Små ændringer i dine internetvaner, såsom at slukke for video under virtuelle møder, mindske spilletiden, begrænse tiden på sociale medier og afmelde nyhedsbreve, kan markant reducere dit miljømæssige fodaftryk!</p>
             </div>
-            <h1>Indsæt img src="" </h1>
+            <img src={sek4bil.src} alt="iPhone-sektion1">
         </div>
     </div>
 </div>
@@ -36,13 +47,30 @@
 
 <style>
 
+
+
     .background-forsiden-container-pad2{
         display: none;
+        /* background-color: #FFFDF5; */
+
     }
 
     .container-background-color{
-        background-color: #124E29;
+        background-color: #FFFDF5;
     }
+
+    .d-mob{
+        display: flex;
+        justify-content: center;
+    }
+
+    .d-mob img{
+        max-width: 100%;
+        max-height: 250px;
+        padding-bottom: 20px;
+    }
+
+
 
     .c-mob2{
         display: flex;
@@ -52,7 +80,8 @@
         font-size: 30px;
         width: 300px;
         font-weight: 600;
-        color: white;
+        color: #397933;
+
     }
 
     /* Brødtekst til sektion 1 */
@@ -66,7 +95,7 @@
         font-weight: 300;
         font-size: 20px;
         padding-bottom: 50px;
-        color: white;
+  
     }
 
     

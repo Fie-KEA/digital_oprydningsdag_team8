@@ -1,15 +1,17 @@
 ---
 import { Image } from 'astro:assets';
-import sek1bil from "../assets/images/sek1-bil.png"
+import sek3bil from "../assets/images/sek3bil.png"
 ---
 
 
+<!-- Mobil format -->
+<!-- Mobil format -->
 <div class="mobil-indhold">
     <div class="container-background-color">
 
         <div class="c-mob">
             <div class="d-mob">
-                <h1>indsæt billede</h1>
+                <img src={sek3bil.src} alt="iPhone-sektion1">
             </div>
         </div>
         
@@ -29,24 +31,36 @@ import sek1bil from "../assets/images/sek1-bil.png"
 </div>
 
 
+<!-- Desktop format -->
+<!-- Desktop format -->
 
-<div class="desktop-indhold">
     <div class="fpormat-container">
         <div class="fpormat-content">
-            <h1>Indsæt img src="" </h1>
-    
+            <img src={sek3bil.src} alt="iPhone-sektion1">
             <div class="fpormat-ind">
                 <h1>Ryd op i din mailboks</h1><br>
                 <p>Filtrer e-mails efter de ældste og arkiver dem. Afmeld nyhedsbreve, du ikke læser.</p>
             </div>
         </div>
     </div>
-</div>
+
 
 
 
 
 <style>
+
+    .d-mob{
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .d-mob img{
+        max-width: 100%;
+        max-height: 300px;
+        padding-bottom: 20px;
+    }
 
     .mobil-indhold{
         display: block;
@@ -93,13 +107,19 @@ import sek1bil from "../assets/images/sek1-bil.png"
     .desktop-indhold{
         display: block;
     }
+
+    .fpormat-container{
+        display: flex;
+        justify-content: center;
+        background-color: #FFFDF5;;
+    }
         
     .fpormat-content{
         display: flex;
         justify-content: center;
         padding: 70px;
         width: 800px;
-        background-color: #FFFDF5;;
+
     }
 
     .fpormat-content img{

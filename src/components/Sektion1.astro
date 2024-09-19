@@ -1,17 +1,20 @@
 ---
 import { Image } from 'astro:assets';
-import sek1bil from "../assets/images/sek1-bil.png"
+import sek1bil from "../assets/images/sek1bil.png"
 ---
 
 
+<!-- Mobil format -->
+<!-- Mobil format -->
 <div class="mobil-indhold">
     <div class="container-background-color">
 
         <div class="c-mob">
             <div class="d-mob">
-                <h1>indsæt billede</h1>
+                <img src={sek1bil.src} alt="iPhone-sektion1">
             </div>
         </div>
+
         
         <div class="c-mob2">
             <div class="d-mob2">
@@ -30,10 +33,12 @@ import sek1bil from "../assets/images/sek1-bil.png"
 
 
 
-<div class="desktop-indhold">
+<!-- Desktop format -->
+<!-- Desktop format -->
+
     <div class="fpormat-container">
         <div class="fpormat-content">
-            <h1>Indsæt img src="" </h1>
+            <img src={sek1bil.src} alt="A bird sitting on a nest of eggs.">
     
             <div class="fpormat-ind">
                 <h1>Slet apps der ikke bliver brugt</h1><br>
@@ -41,23 +46,32 @@ import sek1bil from "../assets/images/sek1-bil.png"
             </div>
         </div>
     </div>
-</div>
+
 
 
 
 
 <style>
+    .d-mob{
+        display: flex;
+        justify-content: center;
+    }
+    .d-mob img{
+        max-width: 100%;
+        max-height: 300px;
+    }
 
     .mobil-indhold{
         display: block;
     }
 
-    .desktop-indhold{
+    .fpormat-container{
         display: none;
     }
 
     .container-background-color{
         background-color: #FFFDF5;
+        width: 100%;
     }
 
     .c-mob2{
@@ -86,20 +100,22 @@ import sek1bil from "../assets/images/sek1-bil.png"
 
     @media screen and (min-width: 1512px){
 
-        .mobil-indhold{
+    .mobil-indhold{
         display: none;
     }
 
-    .desktop-indhold{
+    .fpormat-container{
         display: block;
+        background-color: #FFFDF5;
+        display: flex;
+        justify-content: center;
     }
         
     .fpormat-content{
         display: flex;
         justify-content: center;
-        padding: 70px;
         width: 800px;
-        background-color: #FFFDF5;;
+        padding: 70px;
     }
 
     .fpormat-content img{
