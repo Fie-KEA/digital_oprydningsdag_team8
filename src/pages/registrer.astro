@@ -4,8 +4,9 @@ import MainLayout from "../layouts/MainLayout.astro";
 <MainLayout>
 <div class="bg-cover bg-center w-full h-full" style="background-image: url('public/registrerbaggrund.png');">
 
-<section class="flex sm:flex-col lg:flex-row sm:px-24 lg:px-35 lg:py-20 gap-32 ">
-<div class="animate__animated animate__fadeInLeft ml-20">
+<section class="flex justify-center flex-col lg:flex-row py-20 px-24 lg:px-35 lg:py-20 gap-32 ">
+  <div>
+<div class="animate__animated animate__fadeInLeft">
 <h1 class="text-4xl text-white mb-12 font-thin">Registrer dit bidrag her</h1>
 <div class=" flex flex-col justify-center bg-white px-10 py-16 min-w-96 rounded-lg">     
 <form class="flex flex-col">
@@ -36,13 +37,15 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 </form>
 <div class="flex justify-center">
-<button class="max-w-64 bg-green-900 hover:bg-white hover:border-green-900 hover:border hover:text-green-900 text-white font-bold py-3 px-4 rounded-full mt-10 font-thin">Indsend mit biddrag</button>
+<button class="max-w-64 bg-green-900 hover:bg-white hover:border-green-900 hover:border hover:text-green-900 text-white font-bold py-3 px-4 rounded-full mt-10 font-thin" >Indsend mit biddrag</button>
 </div>
-</div> 
-</div> 
 
-<div class="flex align-center">
-  <img class="w-96 animate-pulse fixed right-40" src="public/fisk_illustration.svg" alt="Oppefra"/>
+</div> 
+</div> 
+</div>
+
+<div class="flex justify-center align-center">
+  <img class="w-60 lg:w-96 animate-pulse" src="public/fisk_illustration.svg" alt="Oppefra"/>
 </div>
 
 </section> 
