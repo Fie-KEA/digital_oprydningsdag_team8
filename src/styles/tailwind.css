@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
+    .centertext {
+        text-align: center;
+    }
 
 }
