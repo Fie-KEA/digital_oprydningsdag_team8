@@ -1,0 +1,37 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+<MainLayout>
+<div class="bg-green-900">
+
+    <section class="flex flex-row sm:px-24 lg:px-35 lg:py-20 gap-10">
+
+ <div> 
+<h1 class="text-white">Registrer dit biddrag her</h1>
+<form class="flex flex-col bg-white px-10 py-20">
+  <label class="border-none border" for="fname">Fornavn</label>
+  <input class="border-none border-b-2" type="text" id="fname" name="fname">
+  <label for="lname">Efternavn</label>
+  <input type="text" id="lname" name="lname">
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email">
+  <label for="land">Land</label>
+  <input type="text" id="land" name="land">
+  <label for="virksomhed">Virksomhedsnavn (valgfrit)</label>
+  <input type="text" id="virksomhed" name="virksomhed">
+  <label for="deltager">Antal deltagere</label>
+  <input type="text" id="deltager" name="deltager">
+  <label for="gb">Antal GB slettet</label>
+  <input type="text" id="gb" name="gb">
+</form>
+</div>  
+
+<div>
+    <img src="https://picsum.photos/400/600" alt="">
+</div>
+
+</section> 
+
+</div>
+
+</MainLayout>
