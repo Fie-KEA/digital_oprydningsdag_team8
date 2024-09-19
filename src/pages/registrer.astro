@@ -4,45 +4,45 @@ import MainLayout from "../layouts/MainLayout.astro";
 <MainLayout>
 <div class="bg-cover bg-center w-full h-full" style="background-image: url('public/registrerbaggrund.png');">
 
-<section class="flex sm:flex-col lg:flex-row justify-center sm:px-24 lg:px-35 lg:py-20 gap-32 ">
-<div class="animate__animated animate__fadeInLeft">
-<h1 class="text-4xl text-white mb-12">Registrer dit biddrag her</h1>
+<section class="flex sm:flex-col lg:flex-row sm:px-24 lg:px-35 lg:py-20 gap-32 ">
+<div class="animate__animated animate__fadeInLeft ml-20">
+<h1 class="text-4xl text-white mb-12 font-thin">Registrer dit bidrag her</h1>
 <div class=" flex flex-col justify-center bg-white px-10 py-16 min-w-96 rounded-lg">     
 <form class="flex flex-col">
-  <label for="fname">Fornavn</label>
-  <input class="block w-full border-b-1 border-black border-t-0 border-l-0 border-r-0 focus:border-black focus:outline-none mb-4" type="text" id="fname" name="fname">
-  <label for="lname">Efternavn</label>
-  <input class="block w-full border-b-1 border-black border-t-0 border-l-0 border-r-0 focus:border-black focus:outline-none mb-4" type="text" id="lname" name="lname">
-  <label for="email">Email</label>
-  <input class="block w-full border-b-1 border-black border-t-0 border-l-0 border-r-0 focus:border-black focus:outline-none mb-4" type="text" id="email" name="email">
-  <label for="land">Land</label>
-  <input class="block w-full border-b-1 border-black border-t-0 border-l-0 border-r-0 focus:border-black focus:outline-none mb-4" type="text" id="land" name="land">
-  <label for="virksomhed">Virksomhedsnavn (valgfrit)</label>
-  <input class="block w-full border-b-1 border-black border-t-0 border-l-0 border-r-0 focus:border-black focus:outline-none mb-4" type="text" id="virksomhed" name="virksomhed">
-  <label for="deltager">Antal deltagere</label>
-  <input class="block w-full border-b-1 border-black border-t-0 border-l-0 border-r-0 focus:border-black focus:outline-none mb-4" type="text" id="deltager" name="deltager">
-  <label for="gb">Antal GB slettet</label>
-  <input class="block w-full border-b-1 border-black border-t-0 border-l-0 border-r-0 focus:border-black focus:outline-none" type="text" id="gb" name="gb">
+  <label class="font-thin" for="fname">Fornavn</label>
+  <input class="block w-full border-b-1 border-black border-t-0 border-l-0 border-r-0 focus:border-black focus:outline-none mb-8 h-2" type="text" id="fname" name="fname">
+  <label class="font-thin" for="lname">Efternavn</label>
+  <input class="block w-full border-b-1 border-black border-t-0 border-l-0 border-r-0 focus:border-black focus:outline-none mb-8 h-2" type="text" id="lname" name="lname">
+  <label class="font-thin" for="email">Email</label>
+  <input class="block w-full border-b-1 border-black border-t-0 border-l-0 border-r-0 focus:border-black focus:outline-none mb-8 h-2" type="text" id="email" name="email">
+  <label class="font-thin" for="land">Land</label>
+  <input class="block w-full border-b-1 border-black border-t-0 border-l-0 border-r-0 focus:border-black focus:outline-none mb-8 h-2" type="text" id="land" name="land">
+  <label class="font-thin" for="virksomhed">Virksomhedsnavn (valgfrit)</label>
+  <input class="block w-full border-b-1 border-black border-t-0 border-l-0 border-r-0 focus:border-black focus:outline-none mb-8 h-2" type="text" id="virksomhed" name="virksomhed">
+  <label class="font-thin" for="deltager">Antal deltagere</label>
+  <input class="block w-full border-b-1 border-black border-t-0 border-l-0 border-r-0 focus:border-black focus:outline-none mb-8 h-2" type="text" id="deltager" name="deltager">
+  <label class="font-thin" for="gb">Antal GB slettet</label>
+  <input class="block w-full border-b-1 border-black border-t-0 border-l-0 border-r-0 focus:border-black focus:outline-none h-2" type="text" id="gb" name="gb">
   
 <div class="flex gap-6 mt-10">
   <input type="checkbox" id="betingelser" name="betingelser" value="betingelser">
-  <label for="betingelser">Jeg er enig i Let’s Do It, World betingelser og vilkår</label><br>
+  <label class="font-thin" for="betingelser">Jeg er enig i Let’s Do It, World betingelser og vilkår</label><br>
 </div>
 
 <div class="flex gap-6 mt-4">
   <input type="checkbox" id="nyhedsbrev" name="nyhedsbrev" value="nyhedsbrev">
-  <label for="nyhedsbrev">JA TAK til nyhedsbrev fra World Cleanup Day</label><br>
+  <label class="font-thin" for="nyhedsbrev">JA TAK til nyhedsbrev fra World Cleanup Day</label><br>
 </div>
 
 </form>
 <div class="flex justify-center">
-<button class="max-w-64 bg-green-900 hover:bg-green-500 text-white font-bold py-3 px-4 rounded-full mt-10">Indsend mit biddrag</button>
+<button class="max-w-64 bg-green-900 hover:bg-white hover:border-green-900 hover:border hover:text-green-900 text-white font-bold py-3 px-4 rounded-full mt-10 font-thin">Indsend mit biddrag</button>
 </div>
 </div> 
 </div> 
 
 <div class="flex align-center">
-  <img class="w-96 animate__animated animate__fadeInRight" src="public/fisk_illustration.svg" alt="Oppefra"/>
+  <img class="w-96 animate-pulse fixed right-40" src="public/fisk_illustration.svg" alt="Oppefra"/>
 </div>
 
 </section> 
@@ -50,3 +50,4 @@ import MainLayout from "../layouts/MainLayout.astro";
 </div>
 
 </MainLayout>
+
