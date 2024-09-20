@@ -3,5 +3,80 @@
 @tailwind utilities;
 
 @layer base{
+    .minegenfarve{
+        color: #124E29;
+    }
 
+    .flex-center{
+        display: flex;
+        justify-content: center;
+    }
+
+    .maxwidth100{
+        max-width: 100%;
+    }
+
+    .maxheight180{
+        max-height: 180px;
+    }
+
+    .d-mob2-klasse{
+        font-size: 30px;
+        width: 300px;
+        font-weight: 600;
+        color: white;
+    }
+
+    .d-mob2-p-klasse{
+        width: 300px;
+        font-weight: 300;
+        font-size: 20px;
+        padding-bottom: 50px;
+        color: white;
+    }
+
+    .d-mob-klasse{
+        max-width: 100%;
+        max-height: 300px;
+        padding-bottom: 20px;
+    }
+
+    .tredjesektion-h1{
+        font-size: 30px;
+        width: 300px;
+        font-weight: 600;
+        color: #397933;
+    }
+
+    .tredje-sektion-p-tekst{
+        width: 300px;
+        font-weight: 300;
+        font-size: 20px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+
+
+    /* Desktop version */
+    .fontsizeotteotte{
+        font-size: 88px;
+        width: 800px;
+        font-weight: 600;
+        color: white;
+    }
+
+    .overste-p{
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 36px;
+        width: 490px;
+    }
+
+    .overste-img{
+        max-width: 100%;
+        max-height: 470px;
+    }
 }
