@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import sek1bil from "../assets/images/sek1bil.png"
+import iphone from "../assets/images/iphone.png"
 ---
 
 
@@ -11,7 +12,7 @@ import sek1bil from "../assets/images/sek1bil.png"
 
         <div class="c-mob">
             <div class="flex justify-center ">
-                <img src={sek1bil.src} alt="iPhone-sektion1" class="max-w-full max-h-80">
+                <img src={iphone.src} alt="iPhone-sektion1" class="max-w-full max-h-80">
             </div>
         </div>
 
@@ -36,7 +37,7 @@ import sek1bil from "../assets/images/sek1bil.png"
 
     <div class="fpormat-container">
         <div class="fpormat-content">
-            <img src={sek1bil.src} alt="A bird sitting on a nest of eggs.">
+            <img src={iphone.src} alt="A bird sitting on a nest of eggs.">
     
             <div class="pl-12 flex flex-col">
                 <h1>Slet apps der ikke bliver brugt</h1><br>
@@ -63,6 +64,7 @@ import sek1bil from "../assets/images/sek1bil.png"
     .container-background-color{
         background-color: #FFFDF5;
         width: 100%;
+        padding-top: 50px;
     }
 
 
@@ -73,6 +75,7 @@ import sek1bil from "../assets/images/sek1bil.png"
     }
 
     .fpormat-container{
+   
         display: block;
         background-color: #FFFDF5;
         display: flex;

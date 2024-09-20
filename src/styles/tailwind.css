@@ -45,7 +45,7 @@
         font-size: 30px;
         width: 300px;
         font-weight: 600;
-        color: #397933;
+        color: #124E29;
     }
 
     .tredje-sektion-p-tekst{
@@ -78,5 +78,12 @@
     .overste-img{
         max-width: 100%;
         max-height: 470px;
+    }
+
+    .fjerde-h1{
+        font-size: 30px;
+        width: 300px;
+        font-weight: 600;
+        color: white;
     }
 }

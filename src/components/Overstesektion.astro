@@ -18,16 +18,64 @@ import birdo from "../assets/images/birdo.png"
     </head>
     <body>
 
-<div class="baggrund-til-overste">
-    <div class="container-overste">
-        <div class="content-overste">
-            <h1 class="fontsizeotteotte">Guide til<br>Digital oprydning</h1>
-            <p class="overste-p">Følg vores 4 steps og vær
-                med i kampen mod digitalt skrald!</p>
+        <!-- Mobil indhold -->
+        <div class="mobil-indhold-overst">
+            <div class="mobil-overst-container">
+                <div class="mobil-overst-indhold">
+                    <h1 class="text-2xl font-bold text-white">Guide til</h1><br>
+                    <h2 class="text-4xl font-bold text-white">Digital oprydning</h2>
+                </div>
+                <div class="mobil-overst-ind">
+                    <p style="width: 300px;" class="text-white">Følg vores 4 steps og vær
+                        med i kampen mod digitalt skrald!</p>
+                    <img src={birdo.src} alt="iPhone-sektion1" class="overste-img">
+                </div>
+            </div>
         </div>
-        <img src={birdo.src} alt="iPhone-sektion1" class="overste-img">
-    </div>
-</div>
+
+        <style>
+            .mobil-overst-container{
+                display: flex;
+                justify-content: center;
+                background-color: #124E29;
+                flex-direction: column;
+                padding-top: 50px;
+
+            }
+
+            .mobil-overst-indhold{
+                padding-left: 30px;
+            }
+
+            .mobil-overst-ind img{
+                max-width: 100%;
+                max-height: 230px;
+                padding-left: 180px;
+            }
+
+            .mobil-overst-ind{
+                padding-bottom: 50px;
+                padding-left: 30px;
+            }
+
+        </style>
+
+        <!-- Desktop indhold -->
+        <div class="desktop-indhold">
+            <div class="baggrund-til-overste">
+                <div class="container-overste">
+                    <div class="content-overste">
+                        <h1 class="fontsizeotteotte">Guide til<br>Digital oprydning</h1>
+                        <p class="overste-p">Følg vores 4 steps og vær
+                            med i kampen mod digitalt skrald!</p>
+                    </div>
+                    <img src={birdo.src} alt="iPhone-sektion1" class="overste-img">
+                </div>
+            </div>
+    
+        </div>
+
+
 
 <!-- "float: left;">< -->
 
@@ -48,6 +96,14 @@ import birdo from "../assets/images/birdo.png"
 
     } */
 
+    .mobil-indhold-overst{
+        display: block;
+    }
+
+    .desktop-indhold{
+        display: none;
+    }
+
 
     .baggrund-til-overste{
         background-color: #124E29;
@@ -66,6 +122,16 @@ import birdo from "../assets/images/birdo.png"
 
     .content-overste{
         padding-top: 50px;
+    }
+
+    @media screen and (min-width: 1512px){
+        .mobil-indhold-overst{
+            display: none;
+        }
+
+        .desktop-indhold{
+            display: block;
+        }
     }
 
     
