@@ -1,9 +1,113 @@
 ---
+import { Image } from 'astro:assets';
+import sek2bil from "../assets/images/sek2bil.png"
+import birdo from "../assets/images/birdo.png"
 ---
-<h1>Indsæt billede af øverste sektion</h1>
+
+<!-- <div class="nav-container">
+    <div class="nav-content">
+        <li style="float: left;"><a href="#">Digital oprydningsdag</a></li>
+        <li><a href="#">Forsiden</a></li>
+        <li><a href="#">How To</a></li>
+        <li><a href="#">Registrer dit bidrag</a></li>
+    </div>
+</div> -->
 
 <style>
-    h1{
-        font-size: 50px;
+    ul {
+      list-style-type: none;
+      
+      background-color: #FFFDF5;
+      position: fixed;
+      width: 100%;
     }
+    
+    li {
+      float: right;
+    }
+    
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+
+      font-style: normal;
+    }
+    
+    li a:hover:not(.active) {
+      font-weight: 500;
+    }
+    
+    .active {
+      font-weight: 800;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <ul>
+        <li style="float: left;"><a href="#news">Digital oprydningsdag</a></li>
+        <li><a href="#">Registrer dit bidrag</a></li>
+        <li><a href="#">How To</a></li>
+        <li><a class="active" href="#home">Forside</a></li>
+    </ul>
+
+<div class="baggrund-til-overste">
+    <div class="container-overste">
+        <div class="content-overste">
+            <h1 class="fontsizeotteotte">Guide til<br>Digital oprydning</h1>
+            <p class="overste-p">Følg vores 4 steps og vær
+                med i kampen mod digitalt skrald!</p>
+        </div>
+        <img src={birdo.src} alt="iPhone-sektion1" class="overste-img">
+    </div>
+</div>
+
+<!-- "float: left;">< -->
+
+
+<style>
+
+    /* .nav-content{
+        display: flex;
+        justify-content: center;
+        background-color: #FFFDF5;
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+    }
+
+    .nav-content li{
+        list-style-type: none;
+
+    } */
+
+
+    .baggrund-til-overste{
+        background-color: #124E29;
+        padding: 100px 0px 50px 0px;
+    }
+
+    .container-overste{
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-overste{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-overste{
+        padding-top: 50px;
+    }
+
+    
+
+
 </style>
+
+
