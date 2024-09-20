@@ -1,8 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
 ---
 
 <MainLayout>
+  <Header></Header>
   <div class="bg-cover bg-center w-full h-full bg-green-900">
     <section class="grid grid-cols-2 py-20 px-24 lg:px-35 lg:py-20 gap-32">
       <div>
@@ -63,6 +65,130 @@ import MainLayout from "../layouts/MainLayout.astro";
       </div>
     </section>
 
-    <section></section>
+    <section class="w-full justify-center">
+      <h1 class="text-white text-6xl w-full text-center my-11">
+        SAVE THE DATE
+      </h1>
+      <div class="flex justify-center align-center">
+        <img
+          class="place-content-center my-11"
+          src="public/countdown.svg"
+          alt=""
+        />
+      </div>
+      <div class="flex justify-center align-center">
+        <button
+          class="max-w-64
+          bg-white
+          hover:border-green-900
+          hover:border
+          hover:text-green-900
+          text-green-900
+          font-bold
+          py-3
+          px-4
+          rounded-full
+          mt-10
+          font-thin my-11"
+        >
+          Registrer dit bidrag her →</button
+        >
+      </div>
+
+      <div class="flex justify-center align-center">
+        <img
+          class="w-60 lg:w-32 animate-pulse my-11"
+          src="public/frog.svg"
+          alt="Oppefra"
+        />
+      </div>
+    </section>
+    <section
+      class="grid grid-cols-1 py-20 px-24 lg:px-35 lg:py-20 gap-32 bg-stone-100"
+    >
+      <div class="animate__animated animate__fadeInLeft">
+        <h3 class="text-2xl text-green-900 mb-12">
+          Problemet med digitalt affald
+        </h3>
+        <h1 class="text-black text-3xl">
+          Én e-mail udsender i gennemsnit 4g CO2, det er det samme som
+          CO2-aftrykket fra en pære tændt i 6 minutter. Der sendes 320
+          milliarder e-mails hver dag og 62 billioner spam-e-mails hvert år = 20
+          millioner tons CO2!
+        </h1>
+        <button
+          class="max-w-64
+          bg-green-900
+          hover:bg-white
+          hover:border-green-900
+          hover:border
+          hover:text-green-900
+          text-white
+          font-bold
+          py-3
+          px-4
+          rounded-full
+          mt-10
+          font-thin"
+        >
+          Ressourcer & materialer →</button
+        >
+        <img
+          class="w-60 lg:w-32 animate-pulse ml-80"
+          src="public/bird.svg"
+          alt="Oppefra"
+        />
+      </div>
+    </section>
+
+    <section class="w-full justify-center">
+      <h1 class="text-white text-6xl w-full text-center my-11">
+        DIGITAL OPRYDNINGSDAG I TAL
+      </h1>
+      <h2 class="text-white text-6xl w-full text-center my-11">1.184.747</h2>
+      <h3 class="text-white text-2xl w-full text-center my-11">Deltagere</h3>
+
+      <h2 class="text-white text-6xl w-full text-center my-11">14,5 M GB</h2>
+      <h3 class="text-white text-2xl w-full text-center my-11">
+        Data der er slettet
+      </h3>
+
+      <h2 class="text-white text-6xl w-full text-center my-11">3.625 ton</h2>
+      <h3 class="text-white text-2xl w-full text-center my-11">
+        CO2 produktion, der er forhindret årligt
+      </h3>
+    </section>
+
+    <section class="bg-stone-100 justify-center">
+      <div
+        class="animate__animated animate__fadeInLeft flex justify-center align-center"
+      >
+        <h1 class="text-black text-3xl flex justify-center centertext">
+          Vær med til at sprede budskabet om Digital Oprydningsdag og vær selv
+          med ved at registrere dit eget bidrag her på hjemmesiden!
+        </h1>
+      </div>
+      <div>
+        <button
+          class="max-w-64
+          bg-green-900
+          hover:bg-white
+          hover:border-green-900
+          hover:border
+          hover:text-green-900
+          text-white
+          font-bold
+          py-3
+          px-4
+          rounded-full
+          mt-10
+          font-thin
+          flex
+          justify-center"
+        >
+          Registrer dit bidrag her →
+        </button>
+      </div>
+    </section>
   </div>
 </MainLayout>
