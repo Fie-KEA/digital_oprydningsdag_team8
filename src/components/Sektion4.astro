@@ -23,7 +23,7 @@ import sun from "../assets/images/sun.png"
         </div>
     </div>
     
-    <div class="c-mob2-p">
+    <div class="flex-center">
         <div class="d-mob2-p">
             <p>Små ændringer i dine internetvaner, såsom at slukke for video under virtuelle møder, mindske spilletiden, begrænse tiden på sociale medier og afmelde nyhedsbreve, kan markant reducere dit miljømæssige fodaftryk!</p>
         </div>
@@ -38,14 +38,16 @@ import sun from "../assets/images/sun.png"
 <div class="background-forsiden-container-pad2">
     <div class="fpormat-container2">
         <div class="fpormat-content2">
-            <div class="f-pormat-om-div-ind2">
+            <div class="f-pormat-om-div-ind2-sek8 pt-12 py-12">
                 <h1>Ændringer i dine internet vaner</h1><br>
                 <p>Små ændringer i dine internetvaner, såsom at slukke for video under virtuelle møder, mindske spilletiden, begrænse tiden på sociale medier og afmelde nyhedsbreve, kan markant reducere dit miljømæssige fodaftryk!</p>
             </div>
-            <img src={sun.src} alt="iPhone-sektion1">
+            <img src={sun.src} alt="iPhone-sektion1" class="py-12">
         </div>
     </div>
 </div>
+
+
 
 
 <style>
@@ -62,26 +64,16 @@ import sun from "../assets/images/sun.png"
         background-color: #124E29;
     }
 
-
-
-
-
     /* Brødtekst til sektion 1 */
-    .c-mob2-p{
-        display: flex;
-        justify-content: center;
-    
-    }
+
     .d-mob2-p p{
         width: 300px;
         font-weight: 300;
         font-size: 20px;
         padding-bottom: 50px;
         color: white;
-  
     }
 
-    
 
     @media screen and (min-width: 1512px){
         .background-forsiden-container-pad2{
@@ -105,16 +97,6 @@ import sun from "../assets/images/sun.png"
         padding-top: 80px;
     }
 
-    .f-pormat-om-div-ind2{
-        color: black;
-        padding-left: 0px;
-        display: flex;
-        flex-direction: column;
-        padding-top: 50px;
-        padding-bottom: 50px;
-       
-    }
-
     .background-forsiden-container-pad2{
         background-color: #124E29;
         
@@ -135,7 +117,6 @@ import sun from "../assets/images/sun.png"
         font-size: 18px;
         width: 250px;
         color: #FFFDF5;
-    
     }
         
     }
