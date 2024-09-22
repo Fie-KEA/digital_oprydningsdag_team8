@@ -2,6 +2,8 @@
 import { Image } from 'astro:assets';
 import sek2bil from "../assets/images/sek2bil.png"
 import computer from "../assets/images/computer.png"
+import wavesektion1 from "../assets/images/wavesektion1.png"
+import wavesektion2 from "../assets/images/wavesektion2.png"
 ---
 
 
@@ -37,12 +39,18 @@ import computer from "../assets/images/computer.png"
 <!-- Desktop format -->
 <div class="background-forsiden-container-pad2">
     <div class="fpormat-container2">
+        <div>
+            <img style="max-width: 100%" src={wavesektion1.src} alt="iPhone-sektion1" class="">
+        </div>
         <div class="fpormat-content2">
             <div class="f-pormat-om-div-ind2-sek2 pt-12">
                 <h1 class="">Ryd op på din computers harddisk</h1><br>
                 <p>Slet filer, der er dubletter eller ikke i brug, og arkiver de vigtige filer. Se vejledningen om, hvordan du rydder op på din computer og din harddisk</p>
             </div>
-            <img src={computer.src} alt="iPhone-sektion1" class="py-12">
+            <img src={computer.src} alt="iPhone-sektion1" class="py-12 animate-pulse">
+        </div>
+        <div>
+            <img style="max-width: 100%" src={wavesektion2.src} alt="iPhone-sektion1" class="">
         </div>
     </div>
 </div>
