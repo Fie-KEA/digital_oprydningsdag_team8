@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import sek2bil from "../assets/images/sek2bil.png"
 import birdo from "../assets/images/birdo.png"
+import waveoverstesektion from "../assets/images/waveoversektion.png"
 ---
 
 <!-- <div class="nav-container">
@@ -38,12 +39,16 @@ import birdo from "../assets/images/birdo.png"
             <div class="baggrund-til-overste">
                 <div class="flex-center">
                     <div class="flex-column pt-12">
-                        <h1 class="fontsizeotteotte">Guide til<br>Digital oprydning</h1>
-                        <p class="overste-p">Følg vores 4 steps og vær
+                        <h1 class="fontsizeotteotte animate__animated animate__fadeInLeft">Guide til<br>Digital oprydning</h1>
+                        <p class="overste-p animate__animated animate__fadeIn">Følg vores 4 steps og vær
                             med i kampen mod digitalt skrald!</p>
                     </div>
                     <img src={birdo.src} alt="iPhone-sektion1" class="overste-img">
                 </div>
+            </div>
+
+            <div>
+                <img style="max-width: 100%" src={waveoverstesektion.src} alt="iPhone-sektion1" class="">
             </div>
     
         </div>

@@ -138,6 +138,7 @@
         background-color: #FFFDF5;
         display: flex;
         justify-content: center;
+        
     }
 
     .sektiontre-h1{
@@ -151,6 +152,10 @@
         padding-top: 50px;
         padding-bottom: 50px;
        
+    }
+
+    .test888888{
+        background-color: #FFFDF5;
     }
 
     
